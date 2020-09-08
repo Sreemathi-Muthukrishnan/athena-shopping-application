@@ -1,0 +1,59 @@
+.orderCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display:flex;
+    flex-flow:row;
+    margin:10px;
+    transition: 0.3s;
+    width:350px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-radius: 15px; */
+    color:#912a73;
+  }
+
+  .rateButton{
+    border: none;
+    outline: 0;
+    padding:5px;
+    color: white;
+    background-color:  #912a73; ;
+    cursor: pointer;
+    margin:5px auto;
+  }
+  .rateButton:hover{
+    opacity: 0.7;
+  }
+   .orderWrapper{
+   margin-top: 50px;
+   display:flex;
+   flex-wrap:wrap;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+  }
+  .orderContainer {
+    padding: 2px 16px;
+    margin:auto;
+  }
+  .orderContainer p{
+    color:#fc2779;
+  }
+
+  
+.OrderEmptyImage{
+  width:50%;
+  height:40%;
+}
+
+  @media(max-width:500px){
+    .orderCard{
+      width:90%;
+    }
+  }
+  @media(max-width:800px){
+    .OrderEmptyImage{
+        width:80%;
+        height:80%;
+    }
+    
+}

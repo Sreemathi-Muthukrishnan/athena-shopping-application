@@ -1,0 +1,62 @@
+.Product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: arial;
+    color: #912a73; 
+    float: left;
+    background-color:  #ffefff;
+    cursor: pointer;
+  }
+  .starIcon{
+    color:#FDCC0D;
+  }
+  .noUser{
+    color: #474747;
+    font-size:13px;
+  }
+  
+  .Product:hover {
+    opacity: 0.7;
+  }
+.Product .price {
+    color: #474747;
+    font-size: 22px;
+  }
+.Product .outOfStock{
+  box-sizing: border-box;
+  font-size: 22px;
+  padding : 10px;
+  background-color: white;
+  color: lightgray;
+}
+.Product h2{
+    font-family: 'Merienda', cursive;
+}
+.Product h4{
+  font-family: 'Merienda', cursive;
+  color:#6f4a8e;
+}
+  
+.Product button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #f54291; 
+    text-align: center;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  
+.Product button:hover {
+    opacity: 0.7;
+  }
+.Product img {
+    border-radius: 5px 5px 0 0;
+    width:70%;
+    height:200px;
+}

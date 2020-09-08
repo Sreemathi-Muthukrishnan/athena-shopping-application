@@ -1,0 +1,39 @@
+.Navbar{
+    height:56px;
+    width:100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #912a73; 
+    /* background-color:  #ffe0f7; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+.Navbar nav{
+    height: 100%;
+}
+.Logo{
+    height: 80%;
+}
+.Navbar h2{
+  position: absolute;
+  padding-top:20px;
+  padding-bottom: 20px;
+  left: 100px;
+  top: 0px;
+}
+
+
+
+@media(max-width:600px){
+    .Navbar h2{
+        font-size: 4vw;
+        left:65px;
+
+      }
+    
+}

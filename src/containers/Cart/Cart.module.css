@@ -1,0 +1,111 @@
+.Cart {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: arial;
+    color: #912a73; 
+    float:left;
+    background-color:  #ffefff;
+    width:900px;
+    height:100px;
+}
+  
+.Cart button:disabled{
+    color: #ccc;
+    background-color:  #ffe0f7;
+    border-color: #ccc;
+    cursor:not-allowed;
+}
+.Cart .price {
+    color: grey;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  h2{
+    font-family: 'Merienda', cursive;
+   color: #912a73; 
+}
+.Cart h2{
+    font-family: 'Merienda', cursive;
+   color: #912a73; 
+}
+
+
+.Cart Button {
+    border: none;
+    outline: 0;
+    padding: 5px;
+    color: white;
+    background-color:  #912a73; ;
+    text-align: center;
+    cursor: pointer;
+    margin-right:5px;
+    margin-left:5px;
+  }
+.Cart p{
+    color: #912a73; 
+    margin: 10px;
+  }
+.Cart Button:hover {
+    opacity: 0.7;
+  }
+  .Cart img {
+    height: 100px;
+    width:350px;
+ 
+}
+.Cart .container{
+    padding: 30px 0px 15px 0px;
+    color: #555;
+    float:right;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin:auto;
+    align-items: center;
+}
+.Cart .containerImage{
+    float: left;
+}
+
+@media(max-width:900px){
+  .Cart img{
+    width:50%;
+  }
+  .Cart {
+    width:100%;
+  }
+  .Cart h2{
+    font-size: 2vw;
+  }
+  .Cart Button{
+    font-size: 10px;
+  }
+  .Cart .container{
+    width:50%;
+  }
+}
+
+@media(max-width:500px){
+  .Cart img{
+    width:30%;
+  }
+  .Cart {
+    width:100%;
+  }
+  .Cart h2{
+    font-size: 2vw;
+  }
+  .Cart p{
+    font-size: 10px;
+  }
+  .Cart Button{
+    font-size: 9px;
+  }
+  .Cart .container{
+    width:70%;
+  }
+}

@@ -1,0 +1,172 @@
+.Home{
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    font-family: 'Merienda', cursive;
+    color:#f54291;
+    margin:0 auto;
+    text-align: center;
+}
+h3{
+  font-family: 'Merienda', cursive;
+  color:white;
+}
+
+.sidenav {
+    bottom:0;
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 59px; /* Stay at the top */
+    left: 0;
+    overflow: hidden;
+    background-color:#912a73;  /* Black */
+    /* overflow-y: auto; */
+    /* padding-top: 0px; */
+    border-color: #912a73;
+  }
+  .sidenav::-webkit-scrollbar {
+    width: 1px;   
+    height: 1px;            /* width of the entire scrollbar */
+  }
+  .sidenav::-webkit-scrollbar-track {
+    background:  #912a73;        /* color of the tracking area */
+  }
+  .sidenav::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 255, 0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #912a73;  /* creates padding around scroll thumb */
+  }
+  
+  /* The navigation menu links */
+  .sidenav li {
+    padding: 6px 8px 6px 16px;
+    font-family: 'Merienda', cursive;
+    list-style:none;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav li:hover {
+    color:#912a73;
+    background-color: white;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+      background: url("https://userscontent2.emaze.com/images/7483f933-7b3c-4265-9297-139aba12ea98/bd878cd5-76fa-4f9c-9d8c-9fb1614d882f.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+      animation: increase 60s linear 10ms infinite;
+      -webkit-transition: all 5.2s ease-in-out;
+      -moz-transition: all 5.2s ease-in-out;
+      -ms-transition: all 5.2s ease-in-out;
+      -o-transition: all 5.2s ease-in-out;
+      transition: all 5.2s ease-in-out;
+      z-index: -2;
+      background-color: #f6f8fa;
+  }
+  .containerCheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    font-family: 'Merienda', cursive;
+    margin-bottom: 12px;
+    cursor: pointer;
+    color:white;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .containerCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:white;
+  }
+  
+  
+  .containerCheck:hover input ~ .checkmark {
+    background-color: #c8408a;
+  }
+  
+  
+  .containerCheck input:checked ~ .checkmark {
+    background-color: #912a73;
+  }
+  
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .containerCheck input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .containerCheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-width: 450px) {
+    .sidenav {
+      /* padding-top: 15px; */
+      width:130px;
+    }
+    .sidenav li {
+      font-size: 10px;
+    }
+    .main {
+      margin-left: 130px; 
+    }
+  }
+
+  @media(max-width:800px){
+    .sidenav{
+      top:106px;
+    }
+  }
+
+  @media(max-height:1000px){
+    .sidenav{
+      overflow-y: auto;
+    }
+  }

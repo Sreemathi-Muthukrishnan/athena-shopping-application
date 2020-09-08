@@ -1,0 +1,32 @@
+.cardGallery {
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .ProductGallerybutton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color:white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  
+  .ProductGallerybutton:hover, a:hover, .card:hover {
+    opacity: 0.7;
+  }

@@ -1,0 +1,18 @@
+.Logo{
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left:0;
+
+}
+.Logo img{
+    height: 59px;
+    width:60px;
+}
+
+@media(max-width:600px){
+    .Logo img{
+        width:40px;
+    }
+   
+}

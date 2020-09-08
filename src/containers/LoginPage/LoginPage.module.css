@@ -1,0 +1,37 @@
+.LoginPage{
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    text-align: center;
+    box-shadow: 0 10px 10px  #ffe0f7;
+    border : 10px  #ffe0f7;
+    border-radius: 15px;
+    padding: 50px;
+    background-color: white;  
+    box-sizing: border-box;
+}
+h2{
+    font-family: 'Merienda', cursive;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color:#f54291;
+    margin:0 auto;
+    text-align: center;
+}
+.LoginButton{
+    margin-top:5px;
+    padding:10px;
+    background-color:white;
+    color:#912a73;
+    border:none;
+    font-size: 18px;
+    outline: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 600px){
+    .LoginPage{
+        width:500px;
+    }
+}
